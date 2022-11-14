@@ -2,10 +2,9 @@ import '../styles/componentes/Titulo.sass';
 
 function Titulo() {
     return (
-      <div className="Titulo">
-        <h1>Titulo</h1>
-  
-      </div>
+      <header className="header__container">
+        <p className='text--header'>Baralhos dos Signos</p>
+      </header>
     )
   }
   
