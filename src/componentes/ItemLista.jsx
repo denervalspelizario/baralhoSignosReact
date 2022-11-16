@@ -2,15 +2,15 @@
 
 import '../styles/componentes/ItemLista.sass';
 
-function ItemLista() {
+function ItemLista(props) {
     return (
       <div className="box__signo">
         <div className="box__signo__nome">
-          <p>Aquário</p> 
+          <p>{props.signo}</p> 
         </div>
-        <img className='box__signo__image' src="../../public/assets/aquario.jpg" alt="Aquário" />
+        <img className='box__signo__image' src={props.image} alt={props.signo} />
         <div className="box__signo__rage">
-          <p>21/01 - 19/02</p>
+          <p>{props.dateInit}{props.dateEnd}</p>
         </div>
       </div>
     )
