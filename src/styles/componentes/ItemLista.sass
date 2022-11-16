@@ -1,0 +1,33 @@
+@use '../mixins'
+@use '../variables'
+
+
+.box__signo
+    @include mixins.card-box
+
+    &:hover
+        @include mixins.hover-card
+
+    .box__signo__nome
+
+        p
+            font-weight: 900
+            font-size: 1.1rem
+            padding: 0.3rem
+            text-transform: uppercase
+
+    .box__signo__image
+        width: 140px
+        height: 100px
+        background-color: variables.$color-gray
+        object-fit: contain
+        border: 1px solid variables.$color-card
+        box-sizing: border-box
+        margin-bottom: 0.6rem
+        padding: 0.5rem
+        flex: 1
+    
+    .box__signo__rage
+
+        p
+            font-size: 0.8rem
