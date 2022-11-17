@@ -27,4 +27,15 @@
     -webkit-transform: scale(1.2)
     -ms-transform: scale(1.2)
     transform: scale(1.2)
-    transition: transform .4s               
+    transition: transform .4s          
+
+
+
+@mixin responsive
+    @media (min-width: 501px) and (max-width: 1200px)
+        @content    
+
+
+@mixin mobile
+    @media (max-width: 500px)
+        @content             

@@ -15,17 +15,6 @@ import TouroIMG from '../image/touro.jpg';
 import VirgemIMG from '../image/virgem.jpg';
 
 
-
-
-
-
-
-
-
-
-
-
-
 function ListaSignos() {
     return (
       <div className="container__listaSignos">
@@ -66,6 +55,10 @@ function ListaSignos() {
           <ItemLista 
               signo="Libra" dateInit="24/09"
               dateEnd='23/10' image={LibraIMG}
+          />
+          <ItemLista 
+              signo="Escorpião" dateInit="24/10"
+              dateEnd='22/11' image={EscorpiaoIMG}
           />
           <ItemLista 
               signo="Sagitário" dateInit="23/11"

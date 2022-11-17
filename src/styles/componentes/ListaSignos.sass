@@ -1,3 +1,7 @@
+@use '../mixins'
+@use '../variables'
+
+
 
 .container__itemlist
     display: flex
@@ -5,4 +9,11 @@
     justify-content: center
     width: 1024px
     margin: 0 auto
-    box-sizing: border-box        
+    box-sizing: border-box     
+
+    @include mixins.responsive
+        width: 100vw   
+
+    @include mixins.mobile
+        width: 100vw   
+        
