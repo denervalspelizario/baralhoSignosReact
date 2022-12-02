@@ -1,5 +1,4 @@
 
-
 import '../styles/componentes/ItemLista.sass';
 
 function ItemLista(props) {
